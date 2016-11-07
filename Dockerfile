@@ -6,4 +6,6 @@ RUN apk add --update \
  && npm install -g bower gulp \
  && rm /var/cache/apk/*
 
+WORKDIR /tmp
+
 ENTRYPOINT /bin/sh
